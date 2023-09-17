@@ -3,10 +3,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `cms_db`
@@ -35,8 +31,8 @@ CREATE TABLE `branches` (
 --
 
 INSERT INTO `branches` (`id`, `branch_code`, `street`, `city`, `state`, `zip_code`, `country`, `contact`, `date_created`) VALUES
-(1, 'vzTL0PqMogyOWhF', 'Branch 1 St., Quiapo', 'Manila', 'Metro Manila', '1001', 'Sri Lanka', '+2 123 455 623', '2023-07-26 11:21:41'),
-(2, 'KyIab3mYBgAX71t', 'SAmple', 'Cebu', 'Cebu', '6000', 'Sri Lanka', '+1234567489', '2023-07-26 16:45:05'),
+(1, 'vzTL0PqMogyOWhF', 'Branch 1 St., Gall Road', 'CMB', 'Colombo', '1001', 'Sri Lanka', '+2 123 455 623', '2023-07-26 11:21:41'),
+(2, 'KyIab3mYBgAX71t', 'Hill Street', 'DHWL', 'Dehiwala', '6000', 'Sri Lanka', '+1234567489', '2023-07-26 16:45:05'),
 (3, 'dIbUK5mEh96f0Zc', 'Sample', 'Sample', 'Sample', '123456', 'Sri Lanka', '123456', '2023-07-27 13:31:49');
 
 -- --------------------------------------------------------
@@ -71,12 +67,12 @@ CREATE TABLE `parcels` (
 --
 
 INSERT INTO `parcels` (`id`, `reference_number`, `sender_name`, `sender_address`, `sender_contact`, `recipient_name`, `recipient_address`, `recipient_contact`, `type`, `from_branch_id`, `to_branch_id`, `weight`, `height`, `width`, `length`, `price`, `status`, `date_created`) VALUES
-(1, '201406231415', 'John Smith', 'Sample', '+123456', 'Claire Blake', 'Sample', 'Sample', 1, '1', '0', '30kg', '12in', '12in', '15in', 2500, 7, '2023-07-26 16:15:46'),
-(2, '117967400213', 'John Smith', 'Sample', '+123456', 'Claire Blake', 'Sample', 'Sample', 2, '1', '3', '30kg', '12in', '12in', '15in', 2500, 1, '2023-07-26 16:46:03'),
-(3, '983186540795', 'John Smith', 'Sample', '+123456', 'Claire Blake', 'Sample', 'Sample', 2, '1', '3', '20Kg', '10in', '10in', '10in', 1500, 2, '2023-07-26 16:46:03'),
-(4, '514912669061', 'Claire Blake', 'Sample', '+123456', 'John Smith', 'Sample Address', '+12345', 2, '4', '1', '23kg', '12in', '12in', '15in', 1900, 0, '2023-07-27 13:52:14'),
-(5, '897856905844', 'Claire Blake', 'Sample', '+123456', 'John Smith', 'Sample Address', '+12345', 2, '4', '1', '30kg', '10in', '10in', '10in', 1450, 0, '2023-07-27 13:52:14'),
-(6, '505604168988', 'John Smith', 'Sample', '+123456', 'Sample', 'Sample', '+12345', 1, '1', '0', '23kg', '12in', '12in', '15in', 2500, 1, '2023-07-27 14:06:42');
+(1, '201406231415', 'Bahir', 'Sample', '+123456', 'Claire Blake', 'Sample', 'Sample', 1, '1', '0', '30kg', '12in', '12in', '15in', 2500, 7, '2023-07-26 16:15:46'),
+(2, '117967400213', 'Hussain', 'Sample', '+123456', 'Claire Blake', 'Sample', 'Sample', 2, '1', '3', '30kg', '12in', '12in', '15in', 2500, 1, '2023-07-26 16:46:03'),
+(3, '983186540795', 'Mohamed', 'Sample', '+123456', 'Claire Blake', 'Sample', 'Sample', 2, '1', '3', '20Kg', '10in', '10in', '10in', 1500, 2, '2023-07-26 16:46:03'),
+(4, '514912669061', 'Yousuf', 'Sample', '+123456', 'John Smith', 'Sample Address', '+12345', 2, '4', '1', '23kg', '12in', '12in', '15in', 1900, 0, '2023-07-27 13:52:14'),
+(5, '897856905844', 'Younus', 'Sample', '+123456', 'John Smith', 'Sample Address', '+12345', 2, '4', '1', '30kg', '10in', '10in', '10in', 1450, 0, '2023-07-27 13:52:14'),
+(6, '505604168988', 'Zakariya', 'Sample', '+123456', 'Sample', 'Sample', '+12345', 1, '1', '0', '23kg', '12in', '12in', '15in', 2500, 1, '2023-07-27 14:06:42');
 
 -- --------------------------------------------------------
 
@@ -153,7 +149,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `type`, `branch_id`, `date_created`) VALUES
-(1, 'Administrator', '', 'admin@admin.com', '0192023a7bbd73250516f069df18b500', 1, 0, '2023-07-26 10:57:04'),
+(1, 'Administrator', '', 'mbahirh624@gmail.com', '0192023a7bbd73250516f069df18b500', 1, 0, '2023-07-26 10:57:04'),
 (2, 'Bahir', 'Hussain', 'mbh@sample.com', '1254737c076cf867dc53d60a0364f38e', 2, 1, '2023-07-26 11:52:04'),
 (3, 'yousuf', 'zakariya', 'yz@sample.com', 'd40242fb23c45206fadee4e2418f274f', 2, 4, '2023-07-27 13:32:12');
 
@@ -225,7 +221,3 @@ ALTER TABLE `system_settings`
 ALTER TABLE `users`
   MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
