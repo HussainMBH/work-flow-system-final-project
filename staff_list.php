@@ -61,7 +61,7 @@
 	$(document).ready(function(){
 		$('#list').dataTable()
 		$('.view_staff').click(function(){
-			uni_modal("staff's Details","view_staff.php?id="+$(this).attr('data-id'),"large")
+			uni_modal("Staff's Details","view_staff.php?id="+$(this).attr('data-id'),"large")
 		})
 	$('.delete_staff').click(function(){
 	_conf("Are you sure to delete this staff?","delete_staff",[$(this).attr('data-id')])
@@ -75,7 +75,7 @@
 			data:{id:$id},
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully deleted",'success')
+					alert_toast("Data Successfully Deleted",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)

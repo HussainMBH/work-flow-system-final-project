@@ -199,7 +199,7 @@
       //       }
 			// }
         if(resp == 1){
-            alert_toast('Data successfully saved',"success");
+            alert_toast('Parcel Details successfully saved',"success");
             setTimeout(function(){
               location.href = 'index.php?page=parcel_list';
             },2000)

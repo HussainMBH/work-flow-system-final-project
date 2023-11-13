@@ -3,17 +3,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-
---
--- Database: `cms_db`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `branches`
---
-
 CREATE TABLE `branches` (
   `id` int(30) NOT NULL,
   `branch_code` varchar(50) NOT NULL,
