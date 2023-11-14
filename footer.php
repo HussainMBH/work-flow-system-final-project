@@ -130,7 +130,7 @@ $('.number').on('input keyup keypress',function(){
 <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->
 <script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
+
 <script src="assets/dist/js/adminlte.js"></script>
 
 <!-- PAGE assets/plugins -->
@@ -142,9 +142,9 @@ $('.number').on('input keyup keypress',function(){
 <!-- ChartJS -->
 <script src="assets/plugins/chart.js/Chart.min.js"></script>
 
-<!-- AdminLTE for demo purposes -->
+
 <script src="assets/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
 <script src="assets/dist/js/pages/dashboard2.js"></script>
 <!-- DataTables  & Plugins -->
 <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>

@@ -112,7 +112,7 @@ CREATE TABLE `system_settings` (
 --
 
 INSERT INTO `system_settings` (`id`, `name`, `email`, `contact`, `address`, `cover_img`) VALUES
-(1, 'CMV System', 'colombomail@view.com', '+9476 8542 623', '2102  Vishnukovil Road, Dehiwala, Colombo, 14608', '');
+(1, 'Colombo Mail View', 'colombomail@view.com', '+9476 8542 623', '2102  Vishnukovil Road, Dehiwala, Colombo, 14608', '');
 
 -- --------------------------------------------------------
 

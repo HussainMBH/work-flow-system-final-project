@@ -11,7 +11,6 @@ if($_SESSION['login_type'] != 1)
             <div class="small-box bg-light shadow-sm border">
               <div class="inner">
                 <h3><?php echo $conn->query("SELECT * FROM branches")->num_rows; ?></h3>
-                <a href="./index.php?page=branch_list" class="nav-link nav-branch_list tree-item">
                 <p>Total Branches</p>
                 </a>
               </div>
@@ -24,20 +23,6 @@ if($_SESSION['login_type'] != 1)
             <div class="small-box bg-light shadow-sm border">
               <div class="inner">
                 <h3><?php echo $conn->query("SELECT * FROM parcels")->num_rows; ?></h3>
-                <a href="#" class="nav-link nav-edit_branch">
-                <p>Total Parcels</p>
-                </a>
-              </div>
-              <div class="icon">
-                <i class="fa fa-boxes"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4"> 
-            <div class="small-box bg-light shadow-sm border">
-              <div class="inner">
-                <h3><?php echo $conn->query("SELECT * FROM parcels")->num_rows; ?></h3>
-                <a href="#" class="nav-link nav-edit_branch">
                 <p>Total Parcels</p>
                 </a>
               </div>
@@ -66,7 +51,6 @@ if($_SESSION['login_type'] != 1)
             <div class="small-box bg-light shadow-sm border">
               <div class="inner">
                 <h3><?php echo $conn->query("SELECT * FROM parcels where status = {$k} ")->num_rows; ?></h3>
-
                 <p><?php echo $v ?></p>
               </div>
               <div class="icon">

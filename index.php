@@ -122,7 +122,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>For Internal Office Staff use only<a href="http://localhost/cms/index.php">Colombo Mail View</a>.</strong>
+    <strong>For Internal Office Staff use only <a href="http://localhost/cms/index.php">Colombo Mail View</a>.</strong>
     <div class="float-right d-none d-sm-inline-block">
       <b><?php echo $_SESSION['system']['name'] ?></b>
     </div>
