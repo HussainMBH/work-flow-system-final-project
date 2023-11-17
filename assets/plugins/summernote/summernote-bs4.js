@@ -1,15 +1,4 @@
-/*!
- * 
- * Super simple wysiwyg editor v0.8.18
- * https://summernote.org
- * 
- * 
- * Copyright 2013- Alan Hong. and other contributors
- * summernote may be freely distributed under the MIT license.
- * 
- * Date: 2020-05-20T16:47Z
- * 
- */
+
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("jquery"));
@@ -551,11 +540,7 @@ function uniqueId(prefix) {
   return prefix ? prefix + id : id;
 }
 /**
- * returns bnd (bounds) from rect
- *
- * - IE Compatibility Issue: http://goo.gl/sRLOAo
- * - Scroll Issue: http://goo.gl/sNjUc
- *
+
  * @param {Rect} rect
  * @return {Object} bounds
  * @return {Number} bounds.top
@@ -606,10 +591,7 @@ function namespaceToCamel(namespace, prefix) {
   }).join('');
 }
 /**
- * Returns a function, that, as long as it continues to be invoked, will not
- * be triggered. The function will be called after it stops being called for
- * N milliseconds. If `immediate` is passed, trigger the function on the
- * leading edge, instead of the trailing.
+
  * @param {Function} func
  * @param {Number} wait
  * @param {Boolean} immediate

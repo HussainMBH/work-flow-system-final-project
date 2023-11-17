@@ -107,9 +107,7 @@ CREATE TABLE `system_settings` (
   `cover_img` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `system_settings`
---
+--Dumping data for table `system_settings`--
 
 INSERT INTO `system_settings` (`id`, `name`, `email`, `contact`, `address`, `cover_img`) VALUES
 (1, 'Colombo Mail View', 'colombomail@view.com', '+9476 8542 623', '2102  Vishnukovil Road, Dehiwala, Colombo, 14608', '');

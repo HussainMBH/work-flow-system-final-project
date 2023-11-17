@@ -21,7 +21,7 @@
 				<tbody>
 					<?php
 					$i = 1;
-					$type = array('',"Admin","Registrar");
+					$type = array('',"Admin","Staff");
 					$qry = $conn->query("SELECT *,concat(firstname,'  ',lastname) as name FROM users order by concat(firstname,'  ',lastname) asc");
 					while($row= $qry->fetch_assoc()):
 					?>
@@ -68,7 +68,7 @@
 			data:{id:$id},
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully deleted",'success')
+					alert_toast("User Details Successfully Deleted",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)
