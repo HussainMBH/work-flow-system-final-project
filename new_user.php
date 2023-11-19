@@ -83,7 +83,7 @@
 			$('#pass_match').attr('data-status','')
 		}else{
 			if(cpass == pass){
-				$('#pass_match').attr('data-status','1').html('<i class="text-success">Password Matched.</i>')
+				$('#pass_match').attr('data-status','1').html('<i class="text-success">Password Matched.</i>') //password validation
 			}else{
 				$('#pass_match').attr('data-status','2').html('<i class="text-danger">Password does not match.</i>')
 			}

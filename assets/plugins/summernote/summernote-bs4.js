@@ -2778,13 +2778,7 @@ var range_WrappedRange = /*#__PURE__*/function () {
       var getVisiblePoint = function getVisiblePoint(point, isLeftToRight) {
         if (!point) {
           return point;
-        } // Just use the given point [XXX:Adhoc]
-        //  - case 01. if the point is on the middle of the node
-        //  - case 02. if the point is on the right edge and prefer to choose left node
-        //  - case 03. if the point is on the left edge and prefer to choose right node
-        //  - case 04. if the point is on the right edge and prefer to choose right node but the node is void
-        //  - case 05. if the point is on the left edge and prefer to choose left node but the node is void
-        //  - case 06. if the point is on the block node and there is no children
+        } 
 
 
         if (dom.isVisiblePoint(point)) {

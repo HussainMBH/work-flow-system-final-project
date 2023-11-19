@@ -8,15 +8,7 @@
 
   var $__default = /*#__PURE__*/_interopDefaultLegacy($);
 
-  /**
-   * --------------------------------------------
-   * AdminLTE CardRefresh.js
-   * --------------------------------------------
-   */
-  /**
-   * Constants
-   * ====================================================
-   */
+
 
   var NAME = 'CardRefresh';
   var DATA_KEY = 'lte.cardrefresh';
@@ -130,10 +122,7 @@
 
     return CardRefresh;
   }();
-  /**
-   * Data API
-   * ====================================================
-   */
+
 
 
   $__default['default'](document).on('click', SELECTOR_DATA_REFRESH, function (event) {
@@ -148,10 +137,7 @@
       CardRefresh._jQueryInterface.call($__default['default'](this));
     });
   });
-  /**
-   * jQuery API
-   * ====================================================
-   */
+
 
   $__default['default'].fn[NAME] = CardRefresh._jQueryInterface;
   $__default['default'].fn[NAME].Constructor = CardRefresh;
@@ -162,10 +148,7 @@
   };
 
 
-  /**
-   * Constants
-   * ====================================================
-   */
+ 
 
   var NAME$1 = 'CardWidget';
   var DATA_KEY$1 = 'lte.cardwidget';
@@ -342,10 +325,7 @@
 
     return CardWidget;
   }();
-  /**
-   * Data API
-   * ====================================================
-   */
+  
 
 
   $__default['default'](document).on('click', SELECTOR_DATA_COLLAPSE, function (event) {
@@ -369,10 +349,7 @@
 
     CardWidget._jQueryInterface.call($__default['default'](this), 'toggleMaximize');
   });
-  /**
-   * jQuery API
-   * ====================================================
-   */
+
 
   $__default['default'].fn[NAME$1] = CardWidget._jQueryInterface;
   $__default['default'].fn[NAME$1].Constructor = CardWidget;
@@ -383,10 +360,7 @@
   };
 
 
-  /**
-   * Constants
-   * ====================================================
-   */
+
 
   var NAME$2 = 'ControlSidebar';
   var DATA_KEY$2 = 'lte.controlsidebar';
@@ -418,10 +392,7 @@
     scrollbarTheme: 'os-theme-light',
     scrollbarAutoHide: 'l'
   };
-  /**
-   * Class Definition
-   * ====================================================
-   */
+
 
   var ControlSidebar = /*#__PURE__*/function () {
     function ControlSidebar(element, config) {

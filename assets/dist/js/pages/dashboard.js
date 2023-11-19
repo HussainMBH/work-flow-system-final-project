@@ -43,17 +43,17 @@ $(function () {
 
   // jvectormap data
   var visitorsData = {
-    US: 398, // USA
-    SA: 400, // Saudi Arabia
-    CA: 1000, // Canada
-    DE: 500, // Germany
-    FR: 760, // France
-    CN: 300, // China
-    AU: 700, // Australia
-    BR: 600, // Brazil
-    IN: 800, // India
-    GB: 320, // Great Britain
-    RU: 3000 // Russia
+    US: 398, 
+    SA: 400, 
+    CA: 1000,
+    DE: 500, 
+    FR: 760, 
+    CN: 300, 
+    AU: 700, 
+    BR: 600, 
+    IN: 800, 
+    GB: 320, 
+    RU: 3000 
   }
   // World map by jvectormap
   $('#world-map').vectorMap({

@@ -4,13 +4,13 @@
 session_start();
 include('./db_connect.php');
   ob_start();
-  // if(!isset($_SESSION['system'])){
+ 
 
     $system = $conn->query("SELECT * FROM system_settings")->fetch_array();
     foreach($system as $k => $v){
       $_SESSION['system'][$k] = $v;
     }
-  // }
+  
   ob_end_flush();
 ?>
 <?php 
@@ -23,7 +23,7 @@ header("location:index.php?page=home");
   <div class="login-logo">
     <a href="#"><b><?php echo $_SESSION['system']['name'] ?></b></a>
   </div>
-  <!-- /.login-logo -->
+ 
   <div class="card">
     <div class="card-body login-card-body">
       <form action="" id="login-form">
@@ -52,18 +52,18 @@ header("location:index.php?page=home");
               </label>
             </div>
           </div>
-          <!-- /.col -->
+         
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
           </div>
-          <!-- /.col -->
+          
         </div>
       </form>
     </div>
-    <!-- /.login-card-body -->
+    
   </div>
 </div>
-<!-- /.login-box -->
+
 <script>
   $(document).ready(function(){
     $('#login-form').submit(function(e){
